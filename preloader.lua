@@ -11,7 +11,9 @@ It is suggested to not play music first and
 make the old EncounterStarting function
 play some music after (it is tricky to implement)
 
-You can freely edit this file
+This code is licensed with the MIT license.
+It pretty much means you can freely edit this file,
+but you need to credit me
 ]]
 
 if not isCYF then

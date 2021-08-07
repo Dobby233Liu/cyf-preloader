@@ -13,6 +13,7 @@ local self = {}
 
 function self._directoryFiles(dirname)
     local list = {}
+    if not Misc.Exists(dirname) then return list end
     local t = Misc.ListDir(dirname, true)
     for i=1,#t do
         table.insert(list, "directory::://\\\\"..t[i])

@@ -35,7 +35,7 @@ preloader.progressBarTotal = 0
 preloader.progressBarCurrent = 0
 
 -- Controls fade effects.
-preloader.fade = true
+preloader.fade = false
 -- Controls creation of progress bar.
 preloader.displayProgress = true
 
@@ -301,7 +301,7 @@ local _Plcb = PreloaderCallback or EncounterStarting or preloader.dummy_cb
 if PreloaderResume then
     preloader._resume = PreloaderResume
 end
-local _Update = Update
+local _Update = Update or preloader.dummy_func
 local _TopUpdate = PrePreloaderUpdate or preloader.dummy_func
 local _UpdateStillBlocked = PostPreloaderUpdate or preloader.dummy_func
 

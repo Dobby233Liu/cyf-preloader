@@ -57,7 +57,7 @@ function self._allFilesRecurse(dirname, post, root, _list)
 end
 
 function self.getMusicForLoading()
-    return self._allFilesRecurse("Audio", {".ogg", ".wav"})
+    return self._allFilesRecurse("Audio", {".ogg", ".wav"}, nil, {"mus_gameover"})
 end
 function self.getSoundForLoading()
     return self._allFilesRecurse("Sounds", {".ogg", ".wav"})

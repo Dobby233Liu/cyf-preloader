@@ -59,7 +59,7 @@ preloader._SOUND = "sound"
 preloader._VOICE = "voice"
 
 -- Debug toggle. Outputs log to debugger if enabled.
-preloader.debug = true
+preloader.debug = false
 
 -- Dummy functions
 function preloader.dummy_func() end
